@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Додавання викладача</title>
+</head>
+<body>
+    <h1>Додавання викладача</h1>
+	<form>
+		<label>Повне ім’я:</label>
+		<input type = "text" name = "fullname" required><br><br>
+		
+		<label>Стать:</label>
+		<input type = "radio" value = "male" name = "gender" required>
+		<label>Чоловіча</label>
+		<input type = "radio" value = "female" name = "gender" required>
+		<label>Жіноча</label><br><br>
+		
+		<label>Дата народження:</label>
+		<input type = "date" name = "dateOfBirth" required><br><br>
+		
+		<label>Email:</label>
+		<input type = "email" name = "email" required><br><br>
+		
+		<label>Телефон:</label>
+		<input type="tel" name = "tel" pattern="[0-9]+" required><br><br>
+		
+		<label>Бажаний колір фону:</label>
+		<input type="color" name = "color"><br><br>
+		
+		<label>Країна:</label>
+		<input type="text" name = "country"required><br><br>
+		
+		<label>Місто:</label>
+		<input type="text" name = "city" required><br><br>
+		
+		<label>Коментар:</label>
+		<textarea name = "comment"></textarea><br><br>
+		
+		<input type="submit" value="Додати викладача">
+	</form>
+</body>
+</html>
