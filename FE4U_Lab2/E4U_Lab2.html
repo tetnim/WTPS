@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style/reset.css">
+	<link rel="stylesheet" href="style/main.css">
+	<title>Викладачі</title>
+</head>
+
+<body>
+
+	<!-- 
+		Header
+	-->
+	
+	<header>
+		<div class="fl">
+			<div class="col" style="width: 20%;">
+				<h1><a class="logo" href="E4U_Lab2.html">Teachinder</a></h1>
+			</div>
+			<div class="col ar" style="width: 80%;">
+				<a href="#" class="link-lg">Name, note or age to search</a>
+				<a href="#" class="link-sq">Search</a>
+			</div>
+		</div>
+		<div class="fl">
+			<div class="col">
+				<nav>
+					<ul class="fl">
+						<li><a href="#teachers">Teachers</a></li>
+						<li><a href="#statistics">Statistics</a></li>
+						<li><a href="#favorites">Favorits</a></li>
+						<li><a href="#about">About</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="col ar">
+				<a href="#add-pop-up" class="link-sq">Add teacher</a>
+			</div>
+		</div>
+		<hr>
+	</header>
+
+	<!-- 
+		Top Teachers
+	-->
+
+	<section id="teachers">
+		<h1 class="section-title">Top Teachers</h1>
+		<div class="search-container">
+			<form action="#" method="post">
+				<label for="age">Age</label>
+				<div class="separ-line">
+					<select id="age" name="age">
+						<option value="1">18-31</option>
+						<option value="2">32-46</option>
+						<option value="3">47-60</option>
+						<option value="4">61-74</option>
+						<option value="5">74-more</option>
+					</select>
+				</div>
+				<label for="region">Region</label>
+				<div class="separ-line">
+					<select id="region" name="region">
+						<option value="Europe">Europe</option>
+						<option value="Asia">Asia</option>
+						<option value="Africa">Africa</option>
+						<option value="North America">North America</option>
+						<option value="Latin America">Latin America</option>
+						<option value="Oceania">Oceania</option>
+					</select>
+				</div>
+				<label for="sex">Sex</label>
+				<div class="separ-line">
+					<select id="sex" name="sex">
+						<option value="Male">Male</option>
+						<option value="Female">Female</option>
+						<option value="Other">Other</option>
+					</select>
+				</div>
+				<input type="checkbox" name="only-photo" id="only-photo">
+				<div class="separ-line">
+					<label for="only-favorits">Only favorits</label>
+				</div>
+				<input type="checkbox" name="only-favorits" id="only-favorits">
+				<label for="only-photo">Only with photo</label>
+			</form>
+		</div>
+		<div class="teachers-container gr">
+			<div class="t-card">
+				<div class="t-avatar">
+					<img src="img/photo1.jpg" alt="IT">
+				</div>
+				<h1 class="t-name">Ihor Tkachuk</h1>
+				<p class="t-subject">Chemistry</p>
+				<p class="t-region">Ukraine</p>
+			</div>
+			<div class="t-card">
+				<div class="t-avatar">
+					<img src="img/photo2.jpg" alt="PR">
+				</div>
+				<h1 class="t-name">Pragg Rameshbabu</h1>
+				<p class="t-subject">Chess</p>
+				<p class="t-region">India</p>
+			</div>
+			<div class="t-card">
+				<div class="t-avatar">
+					<img src="img/photo3.jpg" alt="FJ">
+				</div>
+				<h1 class="t-name">Floor Jansen</h1>
+				<p class="t-subject">Vocal</p>
+				<p class="t-region">Denmark</p>
+			</div>
+			<div class="t-card">
+				<div class="t-avatar">
+					<img src="img/photo4.jpg" alt="FJ">
+				</div>
+				<h1 class="t-name">John Burke</h1>
+				<p class="t-subject">Computer Science</p>
+				<p class="t-region">Belgium</p>
+			</div>
+			<div class="t-card">
+				<div class="t-avatar">
+					<img src="img/photo5.jpg" alt="FJ">
+				</div>
+				<h1 class="t-name">Ari Tang</h1>
+				<p class="t-subject">Biology</p>
+				<p class="t-region">China</p>
+			</div>
+			<div class="t-card">
+				<div class="t-avatar">
+					<img src="img/photo6.jpg" alt="FJ">
+				</div>
+				<h1 class="t-name">Rachel Andrew</h1>
+				<p class="t-subject">Medicine</p>
+				<p class="t-region">UK</p>
+			</div>
+			<div class="t-card">
+				<div class="t-avatar">
+					<h1 class="t-inicial">A.M</h1>
+				</div>
+				<h1 class="t-name">Anna Muzychuk</h1>
+				<p class="t-subject">Chess</p>
+				<p class="t-region">Belarus</p>
+			</div>
+			<div class="t-card">
+				<div class="t-avatar">
+					<h1 class="t-inicial">R.L</h1>
+				</div>
+				<h1 class="t-name">Radoslaw Ljuboevic</h1>
+				<p class="t-subject">Physics</p>
+				<p class="t-region">Poland</p>
+			</div>
+		</div>
+
+		<hr>
+	</section>
+
+	<!-- 
+		Statistics
+	-->
+
+	<section id="statistics">
+		<h1 class="section-title">Statistics</h1>
+		<table id="stat-table">
+			<thead>
+				<tr>
+					<th style="text-align: left;">Name</th>
+					<th>Speciality</th>
+					<th>Age</th>
+					<th>Gender</th>
+					<th>Nationality</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Daisy Alexander</td>
+					<td>Chemistry</td>
+					<td>28</td>
+					<td>Female</td>
+					<td>Vietnam</td>
+				</tr>
+				<tr>
+					<td>Julla Bradley</td>
+					<td>Math</td>
+					<td>26</td>
+					<td>Female</td>
+					<td>USA</td>
+				</tr>
+				<tr>
+					<td>Rita Hart</td>
+					<td>Art</td>
+					<td>41</td>
+					<td>Female</td>
+					<td>Irland</td>
+				</tr>
+				<tr>
+					<td>Jonathan Jacobs</td>
+					<td>Math</td>
+					<td>52</td>
+					<td>Male</td>
+					<td>Endland</td>
+				</tr>
+				<tr>
+					<td>Nathaniel White</td>
+					<td>Computer Science</td>
+					<td>37</td>
+					<td>Male</td>
+					<td>Austria</td>
+				</tr>
+				<tr>
+					<td>Frank Medina</td>
+					<td>English</td>
+					<td>43</td>
+					<td>Mate</td>
+					<td>Italy</td>
+				</tr>
+				<tr>
+					<td>Ella Curtis</td>
+					<td>Chess</td>
+					<td>34</td>
+					<td>Female</td>
+					<td>USA</td>
+				</tr>
+				<tr>
+					<td>Claire Simmmons</td>
+					<td>Art</td>
+					<td>38</td>
+					<td>Female</td>
+					<td>Netherlands</td>
+				</tr>
+				<tr>
+					<td>Benjamin Knight</td>
+					<td>Biology</td>
+					<td>44</td>
+					<td>Male</td>
+					<td>Scotland</td>
+				</tr>
+				<tr>
+					<td>Norma Rose</td>
+					<td>Statistics</td>
+					<td>36</td>
+					<td>Female</td>
+					<td>France</td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="pages-link">
+			<a href="" class="current">1</a>
+			<a href="">2</a>
+			<a href="">3</a>
+			<a href="">...</a>
+			<a href="">Last</a>
+		</div>
+
+		<hr>
+	</section>
+
+	<!-- 
+		Favorits
+	-->
+
+	<section id="favorites">
+		<h1 class="section-title">Favorites</h1>
+		<div class="gor-gallery">
+			<div style="width: 0;">
+				<a style="position: relative; left:-70px;" href="" class="prev-link">&#60;</a>
+			</div>
+			<div class="gor-scroll-container">
+				<div class="t-card">
+					<div class="t-avatar">
+						<img src="img/photo1.jpg" alt="IT">
+					</div>
+					<h1 class="t-name">Ihor Tkachuk</h1>
+					<p class="t-subject">Chemistry</p>
+					<p class="t-region">Ukraine</p>
+				</div>
+				<div class="t-card">
+					<div class="t-avatar">
+						<h1 class="t-inicial">A.M</h1>
+					</div>
+					<h1 class="t-name">Anna Makarevich</h1>
+					<p class="t-subject">Chess</p>
+					<p class="t-region">Belarus</p>
+				</div>
+				<div class="t-card">
+					<div class="t-avatar">
+						<img src="img/photo4.jpg" alt="FJ">
+					</div>
+					<h1 class="t-name">John Burke</h1>
+					<p class="t-subject">Computer Science</p>
+					<p class="t-region">Belgium</p>
+				</div>
+				<div class="t-card">
+					<div class="t-avatar">
+						<img src="img/photo5.jpg" alt="FJ">
+					</div>
+					<h1 class="t-name">Ari Tang</h1>
+					<p class="t-subject">Biology</p>
+					<p class="t-region">China</p>
+				</div>
+				<div class="t-card">
+					<div class="t-avatar">
+						<img src="img/photo3.jpg" alt="FJ">
+					</div>
+					<h1 class="t-name">Floor Jansen</h1>
+					<p class="t-subject">Vocal</p>
+					<p class="t-region">Denmark</p>
+				</div>
+				<div class="t-card">
+					<div class="t-avatar">
+						<img src="img/photo6.jpg" alt="FJ">
+					</div>
+					<h1 class="t-name">Rachel Andrew</h1>
+					<p class="t-subject">Medicine</p>
+					<p class="t-region">UK</p>
+				</div>
+			</div>
+			<div style="width: 0;">
+				<a href="" class="next-link">&#62;</a>
+			</div>
+		</div>
+		<hr>
+	</section>
+
+	<!-- 
+		About
+	-->
+
+	<section id="about">
+		<p class="about-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+			A atque facere, hic impedit Raque molestiae sit tempore?
+			Ea in mollitia natus rerum voluptates. Ea ex excepturi facere tempora.
+			Aliquid asperiores hic limpedit iusto natus quaerat ratione sit?
+			Cutper justo optio voluptas voluptate Enim eveniet fugit lure malores
+			molestiae, praesentium quia.
+		</p>
+		<p class="about-p">Lirem ipsum dolor sit amet, consectetur adipisicing elit.
+			Aliquam eligendi illum in Inventore Ipsum odio afficits
+			omnis quisquam sed tempora?
+		</p>
+		<p class="about-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+			A atque esse expedita id lusto molinie, odit sint ullam
+			veritatis vers?
+		</p>
+	</section>
+
+	<!-- 
+		About
+	-->
+
+	<footer class="fl">
+		<div class="col">
+			<nav>
+				<ul class="fl">
+					<li><a href="#teachers">Teachers</a></li>
+					<li><a href="#statistics">Statistics</a></li>
+					<li><a href="#favorites">Favorits</a></li>
+					<li><a href="#about">About</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="col ar">
+			<a href="#" class="link-sq">Add teacher</a>
+		</div>
+
+	</footer>
+
+	<!--
+		add teacher pop-up
+	-->
+
+	<div id="add-pop-up" class="pop-up">
+		<div class="pop-window" style="width: 400px;">
+			<div class="pop-header">
+				<h1 class="pop-title">Add teacher</h1>
+				<a href="#" class="pop-close">&#10006;</a>
+			</div>
+			<div class="pop-body">
+				<form>
+					<label for="fullname">Name</label>
+					<input type="text" name="fullname" placeholder="Enter name" required>
+					<label for="speciality">Speciality</label>
+					<select id="speciality" name="speciality">
+						<option value="chemistry">Chemistry</option>
+						<option value="math">Math</option>
+						<option value="art">Art</option>
+						<option value="english">English</option>
+						<option value="chess">Chess</option>
+						<option value="biology">Biology</option>
+					</select>
+					<div class="fl">
+						<div class="col">
+							<label for="country">Country:</label>
+							<select id="country" name="country" required>
+								<option value="Vietnam">Vietnam</option>
+								<option value="USA">USA</option>
+								<option value="Irland">Irland</option>
+								<option value="Endland">Endland</option>
+								<option value="Austria">Austria</option>
+								<option value="Italy">Italy</option>
+							</select>
+							<label>Email:</label>
+							<input type="email" name="email" required>
+						</div>
+						<div class="col">
+							<label>City:</label>
+							<input type="text" name="city" required>
+							<label>Phone:</label>
+							<input type="tel" name="tel" pattern="[0-9]+" required>
+						</div>
+					</div>
+					<label>Date of birth:</label>
+					<input type="date" name="dateOfBirth" required>
+					<div class="fl">
+						<label>Sex:</label>
+						<input type="radio" value="male" name="gender" required>
+						<label>Male</label>
+						<input type="radio" value="female" name="gender" required>
+						<label>Female</label>
+					</div>
+					<div class="fl">
+						<label for="color">Background color:</label>
+						<input id="color" type="color" name="color">
+					</div>
+					<label for="notes">Notes (optional):</label>
+					<textarea id="notes" name="comment"></textarea>
+					<input class="link-sq submit" type="submit" value="Add">
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<!--
+		teacher details pop-up
+	-->
+
+	<div id="t-info-pop-up" class="pop-up">
+		<div class="pop-window">
+			<div class="pop-header">
+				<h1 class="pop-title">Teacher info</h1>
+				<a href="#" class="pop-close">&#10006;</a>
+			</div>
+			<div class="pop-body">
+				<div class="pop-t-info fl">
+					<div class="col" style="width: 40%;">
+						<img class="pop-t-photo" src="img/photo1.jpg" alt="Teacher photo">
+					</div>
+					<div class="col" style="width: 60%;">
+						<div class="pop-t-detail">
+							<h1 class="pop-t-name">Ihor Tkachuk</h1>
+							<p class="pop-t-subj">Chemistry</p>
+							<ul>
+								<li>Kiyv, Ukraine</li>
+								<li>35, Male</li>
+								<li class="pop-email">ihor_tkachuk@domain.com</li>
+								<li>+380964993232</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<p class="about-p" style="margin: 15px 0;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum,
+					neque sint. Quibusdam fuga ut quas quos nobis earum, tempora eum odit! Consequuntur odit accusamus sapiente
+					perspiciatis reiciendis rerum blanditiis minus!</p>
+				<a href="#map-show" class="toggle-map">toggle map</a>
+				<iframe id="map-show"
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254084.4461369041!2d30.496292937223147!3d50.45041850104239!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4daca7c4d5053%3A0x3e839daca7bcb20!2z0J7QvdGC0LDRgNC-0LLRgdC60LDRjyDQodGC0YDQsNC70Y8g0L_QtdGC0YHQutCw0Y8g0L7QsdC7LiwgNDMwMDA!5e0!3m2!1suk!2sua!4v1647431301666"
+					width="100%" height="200" allowfullscreen></iframe>
+			</div>
+			<!-- 
+			<h2>Андрій Андрійович Андрієнко</h2>
+			<a href="part3.html">Докладніше</a>
+
+			<h1>Повна версія картки викладача</h1>
+			<h2>Андрій Андрійович Андрієнко</h2>
+
+			<ul>
+				<li>Стать: Чоловіча</li>
+				<li>Вік: 34 роки</li>
+				<li>Email: andriiandriyenko@knu.ua</li>
+				<li>Телефон: +38050499709</li>
+				<li>Країна: Україна</li>
+				<li>Місто: Київ</li>
+			</ul>
+
+			<h2>Коментар</h2>
+			<p>Андрій Андрійович Андрієнко гарний викладач.</p>
+
+			<h2>Карта</h2>
+			
+			<img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" -->
+		</div>
+	</div>
+</body>
+</html>
