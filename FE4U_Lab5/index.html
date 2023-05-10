@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/main.css">
+
+    <title>Викладачі</title>
+</head>
+
+<body>
+
+    <!-- 
+		Header
+	-->
+
+    <header>
+        <div class="fl">
+            <div class="col" style="width: 20%;">
+                <h1><a class="logo" href="E4U_Lab2.html">Teachinder</a></h1>
+            </div>
+            <div class="col ar" style="width: 80%;">
+                <input class="link-lg" id="nnOrAgeSearch" name="nnOrAgeSearch" type="text" placeholder="Name, note or age to search">
+                <!-- <a href="#" class="link-lg">Name, note or age to search</a> -->
+                <a id="searchLink" href="#" class="link-sq">Search</a>
+            </div>
+        </div>
+        <div class="fl">
+            <div class="col">
+                <nav>
+                    <ul class="fl">
+                        <li><a href="#teachers">Teachers</a></li>
+                        <li><a href="#statistics">Statistics</a></li>
+                        <li><a href="#favorites">Favorits</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col ar">
+                <a href="#add-pop-up" class="link-sq">Add teacher</a>
+            </div>
+        </div>
+        <hr>
+    </header>
+
+    <!-- 
+		Top Teachers
+	-->
+
+    <section id="teachers">
+        <h1 class="section-title">Top Teachers</h1>
+        <div class="search-container">
+            <form action="#" method="post">
+                <label for="age">Age</label>
+                <div class="separ-line">
+                    <select id="age" name="age">
+                        <option value="1">18-35</option>
+                        <option value="2">36-53</option>
+                        <option value="3">54-71</option>
+                        <option value="4">72-89</option>
+                        <option value="5">90-more</option>
+                    </select>
+                </div>
+                <label for="country">Region</label>
+                <div class="separ-line">
+                    <select id="country" name="country">
+                        <!-- 
+                            <option value=""></option>
+                            Заповнюється динамічно DOM - методами
+                        -->
+                    </select>
+                </div>
+                <label for="sex">Gender</label>
+                <div class="separ-line">
+                    <select id="gender" name="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+                <input type="checkbox" name="only-favorits" id="only-favorits">
+                <div class="separ-line">
+                    <label for="only-favorits">Only favorits</label>
+                </div>
+                <input type="checkbox" name="only-photo" id="only-photo">
+                <label for="only-photo">Only with photo</label>
+            </form>
+        </div>
+        <div id="teachers-container" class="teachers-container gr">
+            <!-- 
+                Заповнюється динамічно DOM - методами
+            -->
+        </div>
+        <div class="pages-link">
+            <a href="" id="pagination-link">далі</a>
+        </div>
+        <hr>
+    </section>
+
+    <!-- 
+		Statistics
+	-->
+
+    <section id="statistics">
+        <h1 class="section-title">Statistics</h1>
+        <table id="stat-table">
+            <thead>
+                <tr id="sortStaticHeader">
+                    <th data-sort="full_name" style="text-align: left;">Name</th>
+                    <th data-sort="course">Speciality</th>
+                    <th data-sort="age">Age</th>
+                    <th data-sort="gender">Gender</th>
+                    <th data-sort="country">Nationality</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <!-- 
+                    Заповнюється динамічно DOM - методами
+                -->
+
+            </tbody>
+        </table>
+        <div class="pages-link">
+            <a href="" class="current">1</a>
+            <a href="">2</a>
+            <a href="">3</a>
+            <a href="">...</a>
+            <a href="">Last</a>
+        </div>
+
+        <hr>
+    </section>
+
+    <!-- 
+		Favorits
+	-->
+
+    <section id="favorites">
+        <h1 class="section-title">Favorites</h1>
+        <div class="gor-gallery">
+            <div style="width: 0;">
+                <a style="position: relative; left:-70px;" href="" class="prev-link">&#60;</a>
+            </div>
+            <div id="favorite-teachers-container" class="gor-scroll-container">
+                <!-- 
+                    Заповнюється динамічно DOM - методами
+                -->
+            </div>
+            <div style="width: 0;">
+                <a href="" class="next-link">&#62;</a>
+            </div>
+        </div>
+        <hr>
+    </section>
+
+    <!-- 
+		About
+	-->
+
+    <section id="about">
+        <p class="about-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            A atque facere, hic impedit Raque molestiae sit tempore?
+            Ea in mollitia natus rerum voluptates. Ea ex excepturi facere tempora.
+            Aliquid asperiores hic limpedit iusto natus quaerat ratione sit?
+            Cutper justo optio voluptas voluptate Enim eveniet fugit lure malores
+            molestiae, praesentium quia.
+        </p>
+        <p class="about-p">Lirem ipsum dolor sit amet, consectetur adipisicing elit.
+            Aliquam eligendi illum in Inventore Ipsum odio afficits
+            omnis quisquam sed tempora?
+        </p>
+        <p class="about-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            A atque esse expedita id lusto molinie, odit sint ullam
+            veritatis vers?
+        </p>
+    </section>
+
+    <!-- 
+		Footer
+	-->
+
+    <footer class="fl">
+        <div class="col">
+            <nav>
+                <ul class="fl">
+                    <li><a href="#teachers">Teachers</a></li>
+                    <li><a href="#statistics">Statistics</a></li>
+                    <li><a href="#favorites">Favorits</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="col ar">
+            <a href="#add-pop-up" class="link-sq">Add teacher</a>
+        </div>
+
+    </footer>
+
+    <!--
+		add teacher pop-up
+	-->
+
+    <div id="add-pop-up" class="pop-up">
+        <div class="pop-window" style="width: 400px;">
+            <div class="pop-header">
+                <h1 class="pop-title">Add teacher</h1>
+                <a href="#" class="pop-close">&#10006;</a>
+            </div>
+            <div class="pop-body">
+                <form id="add-teacher-form">
+                    <label for="fullname">Name</label>
+                    <input type="text" name="fullname" placeholder="Enter name" required>
+                    <label for="speciality">Speciality</label>
+                    <select id="speciality" name="speciality">
+                        <option value="chemistry">Chemistry</option>
+                        <option value="math">Math</option>
+                        <option value="art">Art</option>
+                        <option value="english">English</option>
+                        <option value="chess">Chess</option>
+                        <option value="biology">Biology</option>
+                    </select>
+                    <div class="fl">
+                        <div class="col">
+                            <label for="country">Country:</label>
+                            <select id="country" name="country" required>
+                                <option value="Vietnam">Vietnam</option>
+                                <option value="USA">USA</option>
+                                <option value="Irland">Irland</option>
+                                <option value="Endland">Endland</option>
+                                <option value="Austria">Austria</option>
+                                <option value="Italy">Italy</option>
+                            </select>
+                            <label>Email:</label>
+                            <input type="email" name="email" required>
+                        </div>
+                        <div class="col">
+                            <label>City:</label>
+                            <input type="text" name="city" required>
+                            <label>Phone:</label>
+                            <input type="tel" name="tel" pattern="[0-9]+" required>
+                        </div>
+                    </div>
+                    <label>Date of birth:</label>
+                    <input type="date" name="dateOfBirth" required>
+                    <div class="fl">
+                        <label>Sex:</label>
+                        <input type="radio" value="male" name="gender" required>
+                        <label>Male</label>
+                        <input type="radio" value="female" name="gender" required>
+                        <label>Female</label>
+                    </div>
+                    <div class="fl">
+                        <label for="color">Background color:</label>
+                        <input id="color" type="color" name="color">
+                    </div>
+                    <label for="notes">Notes (optional):</label>
+                    <textarea id="notes" name="comment"></textarea>
+                    <input class="link-sq submit" type="submit" value="Add">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--
+		teacher details pop-up
+	-->
+
+    <div id="t-info-pop-up" class="pop-up">
+        <div class="pop-window">
+            <div class="pop-header">
+                <h1 class="pop-title">Teacher info</h1>
+                <a href="#" class="pop-close">&#10006;</a>
+            </div>
+            <div class="pop-body">
+                <div class="pop-t-info fl">
+                    <div class="col" style="width: 40%;">
+                        <img class="pop-t-photo" src="img/photo1.jpg" alt="Teacher photo">
+                    </div>
+                    <div class="col" style="width: 60%;">
+                        <div class="pop-t-detail">
+                            <h1 class="pop-t-name">Ihor Tkachuk</h1>
+                            <p class="pop-t-subj">Chemistry</p>
+                            <ul>
+                                <li>Kiyv, Ukraine</li>
+                                <li>35, Male</li>
+                                <li class="pop-email">ihor_tkachuk@domain.com</li>
+                                <li>+380964993232</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <p class="about-p" style="margin: 15px 0;">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Rerum,
+                    neque sint. Quibusdam fuga ut quas quos nobis earum, tempora eum odit! Consequuntur odit accusamus
+                    sapiente
+                    perspiciatis reiciendis rerum blanditiis minus!</p>
+                <a href="#map-show" class="toggle-map">toggle map</a>
+                <iframe id="map-show"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254084.4461369041!2d30.496292937223147!3d50.45041850104239!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4daca7c4d5053%3A0x3e839daca7bcb20!2z0J7QvdGC0LDRgNC-0LLRgdC60LDRjyDQodGC0YDQsNC70Y8g0L_QtdGC0YHQutCw0Y8g0L7QsdC7LiwgNDMwMDA!5e0!3m2!1suk!2sua!4v1647431301666"
+                    width="100%" height="200" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="/script/FE4U-Lab3-mock.js"></script>
+    <script type="module" src="/script/script_lab3.js"></script>
+    <script type="module" src="/script/script_lab4.js"></script>
+    <script type="module" src="/script/script_lab5.js"></script>
+</body>
+
+</html>
